@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_City
+    columns:
+      - name: city_id
+        tests:
+          - unique
+          - not_null
+      - name: city
+        tests:
+          - not_null
+      - name: country_id
+        tests:
+          - not_null
+      - name: last_update
+        tests:
+          - not_null
+
+    
+    
+    
+    	

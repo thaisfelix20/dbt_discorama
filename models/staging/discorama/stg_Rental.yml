@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_Rental
+    columns:
+      - name: rental_id
+        tests:
+          - unique
+          - not_null
+      - name: rental_date
+        tests:
+          - not_null
+      - name: inventory_id
+        tests:
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+      - name: return_date
+
+      - name: staff_id
+        tests:
+          - not_null
+      - name: last_update
+        tests:
+          - not_null

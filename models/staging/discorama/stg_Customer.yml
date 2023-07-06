@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: stg_Customer
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+      - name: store_id
+        tests:
+          - not_null
+      - name: first_name
+        tests:
+          - not_null
+      - name: last_name
+        tests:
+          - not_null
+      - name: email
+        tests:
+          - unique
+          - not_null
+      - name: address_id
+        tests:
+          - not_null
+      - name: activebool
+        tests:
+          - not_null
+      - name: create_date
+        tests:
+          - not_null
+      - name: last_update
+        tests:
+          - not_null
+      - name: active
+        tests:
+          - not_null

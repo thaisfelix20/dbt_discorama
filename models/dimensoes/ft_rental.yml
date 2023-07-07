@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: ft_rental
+    columns:
+      - name: ft_rental_id
+        tests:
+          - unique
+          - not_null
+      - name: rental_date
+        tests:
+          - not_null
+      - name: dm_inventory_id
+        tests:
+          - not_null
+      - name: dm_customer_id
+        tests:
+          - not_null
+      - name: return_date
+
+      - name: dm_staff_id
+        tests:
+          - not_null

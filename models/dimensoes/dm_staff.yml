@@ -1,8 +1,9 @@
 version: 2
+
 models:
-  - name: stg_Staff
+  - name: dm_staff
     columns:
-      - name: staff_id
+      - name: dm_staff_id
         tests:
           - unique
           - not_null
@@ -12,13 +13,13 @@ models:
       - name: last_name
         tests:
           - not_null
-      - name: address_id
+      - name: dm_location_id
         tests:
           - not_null
       - name: email
         tests:
           - not_null
-      - name: store_id
+      - name: dm_store_id
         tests:
           - not_null
       - name: active
@@ -30,7 +31,4 @@ models:
       - name: password
         tests:
           - not_null
-      - name: last_update
-        tests:
-          - not_null
-      - name: picture
+

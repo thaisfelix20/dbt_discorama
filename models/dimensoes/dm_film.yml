@@ -1,36 +1,41 @@
 version: 2
 models:
-  - name: stg_Staff
+  - name: dm_film
     columns:
-      - name: staff_id
+      - name: dm_film_id
         tests:
           - unique
           - not_null
-      - name: first_name
+      - name: title
         tests:
           - not_null
-      - name: last_name
+      - name: description
         tests:
           - not_null
-      - name: address_id
+      - name: release_year
         tests:
           - not_null
-      - name: email
+      - name: language_id
         tests:
           - not_null
-      - name: store_id
+      - name: rental_duration
         tests:
           - not_null
-      - name: active
+      - name: rental_rate
         tests:
           - not_null
-      - name: username
+      - name: length
         tests:
           - not_null
-      - name: password
+      - name: replacement_cost
         tests:
           - not_null
-      - name: last_update
+      - name: rating
         tests:
           - not_null
-      - name: picture
+      - name: special_features
+        tests:
+          - not_null
+      - name: fulltext
+        tests:
+          - not_null

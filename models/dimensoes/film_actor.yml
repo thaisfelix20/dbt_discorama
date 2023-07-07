@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: film_actor
+    columns:
+      - name: dm_actor_id
+        tests:
+          - not_null
+      - name: dm_film_id
+        tests:
+          - not_null
+

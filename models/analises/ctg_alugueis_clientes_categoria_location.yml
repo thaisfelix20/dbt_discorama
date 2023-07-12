@@ -1,0 +1,22 @@
+version: 2
+models:
+  - name: ctg_alugueis_clientes_categoria_location
+    columns:
+      - name: Cliente
+        tests:
+          - not_null
+      - name: Email
+      - name: Categoria
+        tests:
+          - not_null
+      - name: Dt_aluguel
+        tests:
+          - not_null
+      - name: ID
+        tests:
+          - unique
+          - not_null
+      - name: Pais
+        tests:
+          - not_null
+      - name: Valor

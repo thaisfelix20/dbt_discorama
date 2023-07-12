@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: ctg_generos_alugados
+    columns:
+      - name: Genero
+        tests:
+          - unique
+          - not_null
+      - name: Quantidade_Genero
+        tests:
+          - not_null
+
+

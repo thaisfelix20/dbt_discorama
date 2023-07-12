@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: ctg_alugados_pais
+    columns:
+      - name: country
+        tests:
+          - not_null
+      - name: district
+        tests:
+          - not_null
+      - name: city
+        tests:
+          - not_null
+      - name: Quantidade_lugares
+        tests:
+          - not_null
+
+

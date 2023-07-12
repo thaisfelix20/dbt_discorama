@@ -39,3 +39,6 @@ models:
     dimensoes:
       +schema: dimensoes
       +materialized: table
+    analises:
+      +schema: analises
+      +materialized: table

@@ -7,7 +7,7 @@ models:
         tests:
           - unique
           - not_null
-      - name: dm_staff_id
+      - name: manager_dm_staff_id
         tests:
           - not_null
       - name: dm_location_id

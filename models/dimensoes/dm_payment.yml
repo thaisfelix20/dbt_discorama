@@ -1,0 +1,23 @@
+version: 2
+models:
+  - name: dm_payment
+    columns:
+      - name: dm_payment_id
+        tests:
+          - unique
+          - not_null
+      - name: dm_customer_id
+        tests:
+          - not_null
+      - name: dm_staff_id
+        tests:
+          - not_null
+      - name: dm_rental_id
+        tests:
+          - not_null
+      - name: amount
+        tests:
+          - not_null
+      - name: payment_date
+        tests:
+          - not_null

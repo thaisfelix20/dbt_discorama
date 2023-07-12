@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: ctg_categoria_data
+    columns:
+      - name: ID
+        tests:
+          - not_null
+          - unique
+      - name: DT
+        tests:
+          - not_null
+      - name: YEAR
+        tests:
+          - not_null
+      - name: MONTH
+        tests:
+          - not_null
+      - name: DAY
+        tests:
+          - not_null
+      - name: CATEGORY
+        tests:
+          - not_null
+      - name: QTD
+        tests:
+          - not_null

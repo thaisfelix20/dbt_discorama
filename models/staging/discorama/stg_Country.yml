@@ -1,0 +1,15 @@
+version: 2
+    
+models:
+  - name: stg_Country
+    columns:
+      - name: country_id
+        tests:
+          - unique
+          - not_null
+      - name: country
+        tests:
+          - not_null
+      - name: last_update
+        tests:
+          - not_null

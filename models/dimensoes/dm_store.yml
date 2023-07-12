@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: dm_dtore
+    columns:
+      - name: dm_store_id
+        tests:
+          - unique
+          - not_null
+      - name: manager_dm_staff_id
+        tests:
+          - not_null
+      - name: dm_location_id
+        tests:
+          - not_null

@@ -1,0 +1,41 @@
+version: 2
+models:
+  - name: dm_film
+    columns:
+      - name: dm_film_id
+        tests:
+          - unique
+          - not_null
+      - name: title
+        tests:
+          - not_null
+      - name: description
+        tests:
+          - not_null
+      - name: release_year
+        tests:
+          - not_null
+      - name: language_id
+        tests:
+          - not_null
+      - name: rental_duration
+        tests:
+          - not_null
+      - name: rental_rate
+        tests:
+          - not_null
+      - name: length
+        tests:
+          - not_null
+      - name: replacement_cost
+        tests:
+          - not_null
+      - name: rating
+        tests:
+          - not_null
+      - name: special_features
+        tests:
+          - not_null
+      - name: fulltext
+        tests:
+          - not_null

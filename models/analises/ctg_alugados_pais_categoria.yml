@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: ctg_alugados_pais_categoria
+    columns:
+      - name: ID
+        tests:
+          - unique
+          - not_null
+      - name: country
+        tests:
+          - not_null
+      - name: Categoria
+        tests:
+          - not_null
+      - name: Quantidade_pais_categoria
+        tests:
+          - not_null
+
+

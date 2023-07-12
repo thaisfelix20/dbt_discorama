@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: dm_location
+    columns:
+      - name: dm_location_id
+        tests:
+          - unique
+          - not_null
+      - name: address
+        tests:
+          - not_null
+      - name: address2
+      - name: district
+        tests:
+          - not_null
+      - name: postal_code
+      - name: phone
+      - name: country
+        tests:
+          - not_null
+      - name: city
+        tests:
+          - not_null

@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: ctg_atores_alugados
+    columns:
+      - name: Atores
+        tests:
+          - unique
+          - not_null
+      - name: Quantidade_Atuacoes
+        tests:
+          - not_null
+
+

@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: dm_inventory
+    columns:
+      - name: dm_inventory_id
+        tests:
+          - unique
+          - not_null
+      - name: dm_film_id
+        tests:
+          - not_null
+      - name: dm_store_id
+        tests:
+          - not_null
+

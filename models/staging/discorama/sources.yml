@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: lighthouse-391916
+    schema: Tabelas_CSVs
+    tables:
+      - name: Actor
+      - name: Address
+      - name: Category
+      - name: City
+      - name: Country  
+      - name: Customer
+      - name: Film
+      - name: Film_actor
+      - name: Film_category
+      - name: Inventory
+      - name: Payment
+      - name: Rental
+      - name: Staff
+      - name: Store

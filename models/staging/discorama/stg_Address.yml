@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: stg_Address
+    columns:       
+      - name: address_id
+        tests:
+          - unique
+          - not_null
+      - name: address
+        tests:
+          - not_null
+      - name: address2
+      - name: district
+        tests:
+          - not_null
+      - name: city_id
+        tests:
+          - not_null
+      - name: postal_code
+      - name: phone
+      - name: last_update
+        tests:
+          - not_null
+ 
